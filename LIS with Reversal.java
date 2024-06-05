@@ -1,38 +1,29 @@
-Given an array of length N, we need to find the length of longest increasing subsequence.
-
-We can choose any subsequence in the array and reverse its elements (we are allowed to perform this operation only one time), to get the longest increasing subsequence.
-
-Input
-First line contains single integer N (number of elements) where (1≤N≤50)
-.
-
-Second line contains N space separated integers Ai
- such that (1≤Ai≤1e9
-).
-
-Output
-print the length of the longest increasing subsequence after applying above operation at most once.
-
-Examples
-input
-3
-7 7 6
-output
-3
-input
-6
-15 7 19 1 12 18
-output
-4
-input
-9
-1 2 3 9 5 6 8 7 4
-output
-9
-Note
-Case 2:
-
-Take subsequence [15,1] and reverse it. Now to updated array is [1,7,19,15,12,18] the LIS in the new array is [1,7,15,18] or [1.7,12,18] of length 4.
+//Given an array of length N, we need to find the length of longest increasing subsequence.
+//We can choose any subsequence in the array and reverse its elements (we are allowed to perform this operation only one time), to get the longest increasing subsequence.
+//Input
+//First line contains single integer N (number of elements) where (1≤N≤50).
+//Second line contains N space separated integers Ai such that (1≤Ai≤1e9).
+//Output
+//print the length of the longest increasing subsequence after applying above operation at most once.
+//Examples
+//input
+//3
+//7 7 6
+//output
+//3
+//input
+//6
+//15 7 19 1 12 18
+//output
+//4
+//input
+//9
+//1 2 3 9 5 6 8 7 4
+//output
+//9
+//Note
+//Case 2:
+//Take subsequence [15,1] and reverse it. Now to updated array is [1,7,19,15,12,18] the LIS in the new array is [1,7,15,18] or [1.7,12,18] of length 4.
 
 import java.util.Scanner;
 
