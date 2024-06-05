@@ -30,3 +30,26 @@ input
 1 3 8 4
 output
 NO
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        System.out.println(canTransform(arr) ? "YES" : "NO");
+    }
+
+    public static boolean canTransform(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] <= arr[i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
