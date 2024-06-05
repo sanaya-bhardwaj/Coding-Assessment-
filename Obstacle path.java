@@ -1,58 +1,36 @@
-You are given a rectangle with its bottom-left vertex at the origin of the cartesian plane and the top-right vertex at (X,Y)
-. You are at the top-left corner and need to reach the bottom-right corner.
-
-There are N
- obstacles in the form of circles. You cannot pass through any circle. You cannot move on the edge of the rectangle or a circle. Find out if it is possible to reach the destination.
-
-Note: Centers of all circles lie within the rectangle.
-
-Input
-First Line: Integer T
- denoting the number of test cases.
-
-For every test case:
-
-First Line: Two integers X,Y
- denoting the coordinates of top-right vertex of the rectangle.
-Second Line: Integer N
-, denoting the number of circles.
-Each of following N lines contain three integers cxi,cyi,ri
-.
-cxi,cyi
- : x
- and y
- coordinates of i
--th circle.
-
-ri
- : radius of i
--th circle.
-
-Constraints
-
-1≤T≤10
-1≤N≤1000
-1≤X,Y,R≤108
-Centers of all circles lie within the given rectangle.
-
-Output
-For each test case, print YES
- if you can reach the destination, otherwise print NO
-.
-
-The answer to each test case must be printed in a new line.
-
-Example
-input
-1
-20 10
-2
-10 7 2
-10 4 2
-output
-YES
-Note
-There are many routes we can take to reach the the destination. One of them is depicted below.
+//You are given a rectangle with its bottom-left vertex at the origin of the cartesian plane and the top-right vertex at (X,Y). 
+//You are at the top-left corner and need to reach the bottom-right corner.
+//There are N obstacles in the form of circles. You cannot pass through any circle. You cannot move on the edge of the rectangle or a circle. 
+//Find out if it is possible to reach the destination.
+//Note: Centers of all circles lie within the rectangle.
+//Input
+//First Line: Integer T denoting the number of test cases.
+//For every test case:
+//First Line: Two integers X,Y denoting the coordinates of top-right vertex of the rectangle.
+//Second Line: Integer N,denoting the number of circles.
+//Each of following N lines contain three integers cxi,cyi,ri.
+//cxi,cyi : x and y coordinates of i-th circle.
+//ri: radius of i-th circle.
+//Constraints
+//1≤T≤10
+//1≤N≤1000
+//1≤X,Y,R≤108
+//Centers of all circles lie within the given rectangle.
+//Output
+//For each test case, print YES
+//if you can reach the destination, otherwise print NO.
+//The answer to each test case must be printed in a new line.
+//Example
+//input
+//1
+//20 10
+//2
+//10 7 2
+//10 4 2
+//output
+//YES
+//Note
+//There are many routes we can take to reach the the destination. One of them is depicted below.
 
 import java.util.*;
 
