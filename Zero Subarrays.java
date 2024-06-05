@@ -1,32 +1,26 @@
-You are given a binary array a
- of length n
- (1≤n≤106)
- consisting of either 0
- or 1
-. You can carry out an operation (only once), where you convert any 1 to 0. You need to find the maximum count of subarrays having atleast one 0, after carrying out the operation.
+//You are given a binary array a of length n (1≤n≤106) consisting of either 0 or 1. 
+//You can carry out an operation (only once), where you convert any 1 to 0. You need to find the maximum count of subarrays having atleast one 0, after carrying out the operation.
+//Input
+//The first line of input consists of a single integer n −
+// the total number of elements in the binary array. The second line of input consists of n
+ //space separated integers - either 0 or 1 - where the ith
+// integer denotes the ith
+ //element of the binary array.
 
-Input
-The first line of input consists of a single integer n
- −
- the total number of elements in the binary array. The second line of input consists of n
- space separated integers - either 0 or 1 - where the ith
- integer denotes the ith
- element of the binary array.
+//Output
+//Output a single integer - the maximum total count of all subarrays which consist of atleast one 0, after carrying out the operation.
 
-Output
-Output a single integer - the maximum total count of all subarrays which consist of atleast one 0, after carrying out the operation.
-
-Examples
-input
-5
-1 0 0 0 0
-output
-15
-input
-6
-0 0 0 0 0 0
-output
-21
+//Examples
+//input
+//5
+//1 0 0 0 0
+//output
+//15
+//input
+//6
+//0 0 0 0 0 0
+//output
+//21
 
 
 
